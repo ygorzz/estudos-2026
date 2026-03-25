@@ -1,0 +1,5 @@
+O que é um array?
+
+Array é uma lista de valores guardadas em uma única variável.
+Podem guardar qualuer tipo de dados, inclusive funções.
+É um estrutura de dados.

@@ -1,0 +1,14 @@
+O que é destructuring?
+
+Destructuring é uma notação para extrair valores de um Array ou Objeto e atribuí-los a uma nova variável.
+Ou seja, desestruturamos a estrutura de dados e extraímos apenas os valores que desejamos de acordo com nosso objetivo no código.
+A ideia principal de usá-la é facilitar a legibilidade do código
+
+Exemplo:
+
+const pessoa = {
+    nome: 'ygor', 
+    idade: 18
+}
+// Aqui extraímos apenas o nome
+const {nome} = pessoa

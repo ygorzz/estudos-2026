@@ -1,0 +1,9 @@
+Resumo prático:
+
+Objeto = estrutura viva no código JavaScript.
+
+JSON = formato textual que representa dados.
+
+Para converter JSON em objeto, usamos JSON.parse().
+
+Para converter objeto em JSON, usamos JSON.stringify().

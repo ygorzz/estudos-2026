@@ -1,0 +1,3 @@
+O que é um objeto?
+
+Objeto é uma estrutura de dados que armazena os mesmos em formato de chave: valor

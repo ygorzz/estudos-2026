@@ -1,0 +1,7 @@
+O que é o ISO 8601?
+
+ISO 8601 é um padrão universal para representar datas e horário. Define um formato único e universal, evitando confusões entre países. 
+
+Formato: YYYY-MM-DD:HH:mm:ssZ
+Z -> tempo universal 
+

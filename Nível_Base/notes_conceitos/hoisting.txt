@@ -1,0 +1,9 @@
+O que é hoisting?
+
+Hoisitng é o processo de elevar as varíaveis para o topo do código antes de executar o mesmo para evitar erros. Ele é presente em diversas linguagens, porém é mais perceptível no JavaScript. Esse processo ocorre com todos os três tipos de variáveis (var, lçet e const), porém com comportamentos diferentes.
+
+Com var: as variáveis são elevadas, declaradas no topo do código e inicializadas como undefined. Código roda.
+
+Com let e const: variáveis elevadas e delcaradas no início do código, porém ficam na Temporal Dead Zone (TDZ)* e só podem ser acessadas a partir da linha onde ocorre sua inicialização. Caso tente acessá-las antes dessa linha, o código trava.
+
+*TDZ -> período entre o início do escopo até a linha de inicialização da variável.

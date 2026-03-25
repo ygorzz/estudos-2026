@@ -1,0 +1,5 @@
+Qual a diferença entre lista e array?
+
+Em JavaScript, não existe o tipo 'lista'. Esse é apenas um conceito para se referir a um conjunto de elementos, uma forma 'informal'. O correto é array.
+
+Porém, em Python, há o tipo list, que é o equivalente a um array em JavaScript.

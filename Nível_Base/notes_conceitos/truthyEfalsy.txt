@@ -1,0 +1,5 @@
+Falsy: valores que, embora não sejam exatamente false, são interpretados como falsos.
+-> false, 0, "", null, undefined, NaN (Not a Number)
+
+Truthy: valores que, embora não sejam exatamente true, são interpretados como verdadeiros.
+-> Todos os outros valores
