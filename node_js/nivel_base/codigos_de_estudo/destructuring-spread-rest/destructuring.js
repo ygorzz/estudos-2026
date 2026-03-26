@@ -11,6 +11,7 @@ const pessoa = {
 // Aqui extraímos apenas o nome
 const {nome} = pessoa
 
+// Aqui usamos destructuring e uma função
 function saudacao ({nome}) {
     console.log(`Olá, ${nome}`)
 }

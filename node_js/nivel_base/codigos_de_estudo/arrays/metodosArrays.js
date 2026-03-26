@@ -13,7 +13,7 @@ const impares = numeros.filter(numero => {
 console.log('Ímpares: ', impares)
 
 // MAP -> transforma os valores e cria um novo array de mesmo tamanho:
-// -> pode receber o index como 
+// -> pode receber o index como parâmetro
 console.log('Números mapeados: ')
 const menosUm = numeros.map((numero) => {
     return numero - 1
