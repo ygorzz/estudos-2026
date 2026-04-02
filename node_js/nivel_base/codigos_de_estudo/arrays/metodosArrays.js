@@ -21,6 +21,8 @@ const menosUm = numeros.map((numero) => {
 console.log(menosUm)
 
 
+
+
 // EXERCÍCOS DE FIXAÇÃO
 console.log('\nEXERCÍCIOS DE FIXAÇÃO:\n')
 

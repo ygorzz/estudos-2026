@@ -1,0 +1,15 @@
+O que é recursão?
+
+Recursão é chamar a função dentro dela mesma. 
+
+Ex:
+funcion fatorial (num) {
+    if(num === 0 || num === 1) return 1;
+    return num * fatorial(num - 1); 
+} 
+
+Como funciona?
+
+Nesse exemplo, a função chama a si própria várias vezes até que caia na condição de parada. Cada vez que é chamada, uma INSTÂNCIA da mesma é criada. E, após todas as chamadas, a função começa a resolver instância por instância de trás para a frente. 
+
+É como uma escada que começa de cima e vai criando degraus (instâncias) para baixo e, após atingir o solo (condição de parada), começa a subir "destruindo" (resolvendo) os degraus (instâncias).

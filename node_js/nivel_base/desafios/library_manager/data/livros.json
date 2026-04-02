@@ -10,5 +10,11 @@
     "autor": "Tolkien",
     "categoria": "Aventura",
     "lido": true
+  },
+  {
+    "titulo": "A História de uma alma",
+    "autor": "Santa Teresinha do Menino Jesus",
+    "categoria": "Biografia",
+    "lido": true
   }
 ]
