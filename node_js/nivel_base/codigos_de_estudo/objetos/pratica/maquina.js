@@ -1,3 +1,5 @@
+// Criação de um método dentro do onbjeto. Acessando props com 'this'
+
 const maquina = {
   nome: 'Esteira Transportadora',
   funcionando: true,

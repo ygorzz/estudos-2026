@@ -1,3 +1,4 @@
+// Exibe um relatório das infos do objeto. Acesso de chaves e valores do objetos com métodos
 const relatorio = {
   temperatura: 75,
   vibracao: 40,
@@ -13,7 +14,6 @@ console.log(`Valores registrados: ${valores}`)
 console.log('\nDetalhamento:')
 
 for(const medida in relatorio){
-    let msg = ''
-    relatorio[medida] > 50 ? msg = 'alerta' : msg = 'ok'
+    const msg = relatorio[medida] > 50 ? 'alerta' : 'ok'
     console.log(`${medida}: ${relatorio[medida]} (${msg}) `)
 }

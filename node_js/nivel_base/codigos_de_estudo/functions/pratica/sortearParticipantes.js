@@ -1,3 +1,5 @@
+// Sorteia um elemento do array e faz verificações 
+
 const participantes = [
   { nome: "Laura", pontuacao: 92 },
   { nome: "Pedro", pontuacao: 67 },

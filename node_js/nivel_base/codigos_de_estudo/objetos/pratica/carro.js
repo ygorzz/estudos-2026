@@ -1,3 +1,5 @@
+// Deletando prop do objeto
+
 const carro = {
   marca: 'Toyota',
   modelo: 'Corolla',

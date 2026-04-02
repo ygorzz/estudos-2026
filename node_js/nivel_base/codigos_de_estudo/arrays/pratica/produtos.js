@@ -1,3 +1,5 @@
+// Acessando props dentro de um array de objetos e manipulando-as
+
 const produtos = [
   { nome: 'Notebook', preco: 2500, quantidadeVendida: 75 },
   { nome: 'Mouse', preco: 100, quantidadeVendida: 180 },
@@ -12,6 +14,7 @@ exibirMaisVendidos(produtos);
 console.log('\nTotal de vendas produto: \n');
 exibirTotalVendas(produtos);
 
+// Exibe infos de cada produto
 function exibirProdutos(lista){
     lista.forEach(item => {
         console.log(`Produto: ${item.nome} | Preço: ${item.preco} | Quantidade vendida: ${item.quantidadeVendida}`);
@@ -26,6 +29,7 @@ function exibirMaisVendidos(lista){
     })
 }
 
+// Exibe total de vendas
 function exibirTotalVendas(lista){
     lista.forEach(item => {
         console.log(`${item.nome}: R$ ${item.preco * item.quantidadeVendida}`);

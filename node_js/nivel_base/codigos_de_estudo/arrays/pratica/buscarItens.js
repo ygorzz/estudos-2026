@@ -1,3 +1,5 @@
+// Busca um elemento dentro de um array:
+
 const livros = ['Dom Casmurro', 'O Cortiço', 'Capitães da Areia', 'Iracema'];
 const livroProcurado = 'O Cortiço';
 

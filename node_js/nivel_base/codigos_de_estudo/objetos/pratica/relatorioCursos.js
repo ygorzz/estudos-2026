@@ -1,3 +1,5 @@
+// Exibindo relatório de cada objeto dentro o array e uma relaçao entre eles.
+
 const curso = {
   titulo: "JavaScript Intermediário",
   estudantes: [

@@ -1,3 +1,5 @@
+// Exibindo infos de um array de objetos
+
 const dispositivos = [
     {
         nome: 'Iphone',

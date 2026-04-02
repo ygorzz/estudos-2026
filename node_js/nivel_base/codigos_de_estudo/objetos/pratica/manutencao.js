@@ -1,3 +1,4 @@
+// Calculo de dias e meses em manutenção. Exibição de uma mensagem personalizada.
 const manutencao = {
   jan: 2,
   fev: 0,

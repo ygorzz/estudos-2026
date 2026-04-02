@@ -1,3 +1,5 @@
+// Acessando posição de um array como prop de um objeto
+
 const receita = {
     nome: 'bolo', 
     igredientes: ['farinha', 'ovo', 'açúcar',  'sal', 'leite'],

@@ -1,4 +1,4 @@
-// Esse exercíco reforça a boa prática de responsabilidade única para ua função
+// Esse exercíco reforça a boa prática de responsabilidade única para uma função
 
 const nomeAparelho = 'Geladeira'
 const consumo = calcularConsumo(150, 4)

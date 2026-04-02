@@ -1,3 +1,5 @@
+// Soma cada elemtno do array
+
 const despesas = [120, 80, 45.5, 200, 60];
 
 let soma = 0; 
