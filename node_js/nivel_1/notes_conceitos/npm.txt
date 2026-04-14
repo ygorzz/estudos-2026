@@ -1,0 +1,8 @@
+O que é npm?
+
+npm -> node package manager
+
+- É um repositório de pacotes específicos do node. Contém desde as bibliotecas mais simples até os frameworks mais complexos. 
+- npm install -> acessa o repositório da lib na interner e traz para dentro do projeto armazenando na pasta node_modules
+
+OBS: O npm é instalado automaticamente com o node

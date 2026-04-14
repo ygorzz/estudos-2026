@@ -1,0 +1,10 @@
+Qual a diferença entre o export e o export default?
+
+O 'export default' geralemente é usado na função quando o arquivo tem uma responsabilidade principal.´
+- Você exporta como uma coisa principal e não como uma função específica.
+- Na importação, o nome não precisa ser o mesmo da função pois, como é 'default', ele obrigatoriamente será importado - mesmo que com um nome diferente.
+- Na importação não é necessário o uso de colchetes {}
+
+O 'export' é nomeado. Geralmente usado para arquivos com várias funções a serem exportadas. 
+- Exporta pelo nome como uma função.
+- Na importação é necessário o uso de colchetes {}

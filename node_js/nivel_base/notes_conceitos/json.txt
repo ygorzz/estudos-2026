@@ -7,3 +7,7 @@ JSON = formato textual que representa dados.
 Para converter JSON em objeto, usamos JSON.parse().
 
 Para converter objeto em JSON, usamos JSON.stringify().
+- EX: JSON.stringify(data, null, 2):
+    - data -> dados a serem convertidos
+    - null -> argumentopara o replace, ou seja, filtragem dos dados que de 'data' qu vão ser convertidos. 'null' significa que serão todos os dados
+    - 2 -> define a identação. '2' geralemente é o usado para deixar 'bonitinho' como costumamos ver. 

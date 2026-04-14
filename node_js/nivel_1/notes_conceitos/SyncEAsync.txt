@@ -1,0 +1,21 @@
+Código síncrono e assíncrono:
+
+Fluxo do código síncrono:
+1 - Requisição é feita (por exemplo: buscando por milhares de dados no BD)
+2 - O progrmaa TRAVA até que a requisição seja finalizada, o restante do código não executa
+3 - Após finalizar a requisição, o restante do código é executado
+Requisição 1 -> Requisição 1 -> Resposta da Requisição 1 -> Programa 
+
+Fluxo do código assíncrono:
+1 - Requisição é feita (por exemplo: buscando por milhares de dados no BD)
+2 - Enquanto os dados estão sendo buscados, o restante do código continua sendo executado
+3 - Quando a requisição é finalizada o resultado é enviado, porém a execução do restante do programa em nenhum momemnto foi travada.
+Requisição -> Programa -> Programa -> Resposta da Requisição
+
+    O código assíncrono é recorrentemente usado em:
+    - Manipulação de arquivos de disco para n travar o programa pois geralmente são lentas
+    - Comunicação entre cliente e servidor
+    - Operações em BDs
+
+OBS: Um codigo assíncrono não retorna o resultado em si, mas um objeto promise com os dados
+

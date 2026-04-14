@@ -1,0 +1,23 @@
+O que são Promises?
+
+Promise é um objeto criado ao iniciar uma função assíncrona. Esse objeto acompanha o estado atual da função, iniciando como 'pending' e finalizando com 'fulfilled' ou 'rejected' e entrega a resposta da função.
+
+Estados:
+- pending -> etsado inicial, pendente.
+- fulfil    led -> a função foi concluída com sucesso.
+- rejected -> ocorreu algum erro durante a execução da função.
+
+Após a conclusão, sendo fulfilled ou rejected, a Promise tbm passa a ser considerado settled, isto é, a promise já foi finalizada.
+Isso se torna útil uquando queremos apenas saber se a promessa finalizou sem nos preocupar com o resultado.
+
+Objeto promise VS Promessa;
+
+Promessa é uma forma abstrata e um conceito para representar o processo do objeto promise de acompanhar o estado da função e retornar o resultado ao final. "Promete entregar uma resposta ao final".
+
+OUTROS MÉTODOS:
+
+- Promise.all
+Este método recebe um iterável, como um array, e retorna uma única promessa após todos os itens no array forem percorridos. O conteúdo dessa única promessa, após resolvida, é um array com os valores esperados (em caso de sucesso). O método irá retornar uma promessa rejeitada caso qualquer um dos itens do array não se resolva com sucesso.
+
+- O construtor Promise()
+new Promise()

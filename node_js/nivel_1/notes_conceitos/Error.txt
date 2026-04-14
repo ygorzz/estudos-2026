@@ -1,0 +1,10 @@
+Diferença entre apenas lançar um erro e lançar um new Error()
+
+Geralemente, quando o erro vem de um módulo ou lib nativa do node, por exemplo, ele já vem como um objeto pronto, por isso apenas o lançamos com throw. 
+
+Quando identificamos um possível erro na nossa lógica, no nosso código, e que não vem nativo no node - uma entrada do usuário que pode vir vazia, por exemplo - usamos o new Error() para criar e lançar com throw um objeto erro que n existia, mas que passa a existir. E podemos personalizar com as informações que acharmos necessárias para o erro. 
+
+OBS:
+1 - Podemos personalizar um erro nativo tbm, porém não é recomendado. Recomenda-se que sempre crie um new Error() para personalizá-lo.
+
+2 - Se tratando de apenas exibir uma mensagem de erro, o console.log() tbm funciona. Porém o restante do código não sabe que ali ocorreu um erro. O new Error() cria um objeto Error e, por isso, além de ser capaz de exibir a mensagem, também avisa que naquele parte há algo de errado. 
