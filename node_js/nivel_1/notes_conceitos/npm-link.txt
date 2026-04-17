@@ -1,0 +1,18 @@
+O que é o comando npm link?
+
+npm link é um atalho de desenvolvimento para testar o CLI por um nome que definimos (no campo bin dentro de package.json) ao invés de todo o caminho do arquivo a ser executado. 
+
+Workflow:
+
+- em package.json definimos um campo bin. Ex:
+"bin": {
+    "diario": "./src/cli.js"
+}
+
+- adicionar o shebang* na primeira linha do arquivo:
+#!/usr/bin/env node
+ -> define o node como ambiente de execução e não precisaremos explicitamente digitar "node" no terminal para rodar o programa. 
+
+- rodar npm link no terminal
+
+* O nome "shebang" vem de #! (hash + bang/exclamation). É uma convenção do Unix/Linux que diz ao sistema operacional: "use este programa para executar este arquivo"
