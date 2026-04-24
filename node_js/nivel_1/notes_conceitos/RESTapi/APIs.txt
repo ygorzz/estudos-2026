@@ -1,0 +1,13 @@
+O que é uma API? 
+
+- API -> Application Programming Interface (Interface de Programa de Aplicações)
+
+- Fluxo: front-end -> API -> back-end -> API -> front-end
+Uma API vive no back-end. É a INTERFACE intermediária entre o front e o back. É a parte que define rotas, regras, controladores...
+Uma analogia simples: Backend é o cérebro. API é a boca do cérebro que é usada para se comunicar com outros serviços.
+
+
+Há vários tipos, modelos ou arquiteturas diferentes para se construir uma API. (APIs SOAP, APIs GraphQL, Event-Driven APIs, APIs gRCP...)
+
+Porém uma das principais são as APIsREST.
+-> é um modelo/arquitetura para desenvolver uma API que utiliza o protocolo HTTP para transmissão de dados.

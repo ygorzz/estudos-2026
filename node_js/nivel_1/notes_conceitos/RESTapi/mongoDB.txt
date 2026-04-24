@@ -1,0 +1,15 @@
+O que é o MongoDB?
+
+MongoDB -> SGBD NOSQL que armazena os dados como documentos(JSON/BSON)
+
+NOSQL -> Banco de dados não relacionais. Não armazenam os dados em tabelas, mas sim de outros modos, como documentos, chave-valor, grafos... 
+
+No MongoDB:
+
+Projeto (Project) → organização (tipo uma pasta)
+Cluster* → infraestrutura/ambiente onde o banco roda
+Database → banco de dados (lógico)
+Collection → “tabela”
+Document → dado
+
+Cluster -> É um conceito de infraestrutura distribuída. É um ambiente que comporta vários servidores. Esses servidores podem: 1 - Distribuir os dados entre eles. 2 - Replicar os dados entre eles. Dessa forma, caso um servidor caia, o sistema continua rodando.

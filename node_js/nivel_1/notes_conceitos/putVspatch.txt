@@ -1,0 +1,3 @@
+Put -> Substitui o cnteúdo por completo, um novo conteúdo passa a existir
+
+Patch -> atualiza dados de um mesmo conteúdo

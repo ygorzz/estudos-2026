@@ -1,0 +1,11 @@
+👉 req.params:
+
+representa partes dinâmicas da rota
+geralmente identifica um recurso específico (ex: ID)
+é obrigatório quando definido na rota
+
+👉 req.query:
+
+usado para filtros, paginação, ordenação
+é opcional e flexível
+não altera a estrutura da rota

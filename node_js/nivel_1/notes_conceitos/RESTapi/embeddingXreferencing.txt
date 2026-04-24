@@ -1,0 +1,17 @@
+Embedding X Rferenging
+
+-> são modos de unir/referenciar dados de diferentes coleções
+
+-> Embedding -> dados que são consultados juntos devem ser armazenados juntos
+-> Referencing -> referencia outras coleções por algum dado (PK, FK)
+
+| 	  |               	**Embedding** (Incorporação)    |
+|:---:|:------------------------------------------------|
+| PRO | Dados retornados em uma única consulta        	|
+| PRO | atualização e exclusão de dados em única operação|
+| CON | duplicação de dados                           	|
+| CON | documentos maiores                            	|
+| 	  |              	**Referencing**              	|
+| PRO | Não há duplicação de dados                    	|
+| PRO | documentos menores                            	|
+| CON | necessário "unir" dados de múltiplos documentos |

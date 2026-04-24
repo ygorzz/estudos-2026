@@ -1,0 +1,22 @@
+O que é um modelo?
+
+- Modelo é um objeto que representa uma coleção no Banco de Dados. É também uma interface para que a API interaja com a coleção no BD.
+- Dentro dele é criado o Schema para definir a estrutura da coleção.  
+- O modelo é a camada que interaje diretamente com o BD
+
+O que é um controller/
+
+- É o arquivo que define e gerencia as ações que podem ser feitas na aplicação usando os modelos para acesar os dados.
+- Cada model tem seu prórpo controller para que seja definido o que é possível fazer com os dados desse model.
+
+WORKFLOW COM A ARQUITETURA MVC:
+
+-> Requisição é feita para a rota
+-> routes /livros 
+-> Routes chama o controller repassando os dados da requisição
+-> controller livro
+-> Processa a requisição e chama o modelo 
+-> model livro
+-> Conecta com o BD e processa a query
+
+-> Depois da consulta, ocorre o fluxo inverso

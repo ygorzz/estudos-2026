@@ -1,0 +1,7 @@
+O que é um middleware?
+
+- Middleware é uma função que será exexutada entre a requisição e a resposta.
+-  Pode haver vários middlewares.
+
+
+- O middleware recebe a requisição -> realiza alguma operação que definimos e formata os dados -> rota final recebe os dados formatados e responde. 

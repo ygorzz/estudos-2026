@@ -1,0 +1,7 @@
+HTTP -> HyperText Transfer Protocol (protocolo de transferência de hipertexto)
+
+- É o protocolo de comunicação usado por grande parte de tudo que acontece na internet.
+
+- Fluxo:
+-> Cliente -> http request -> Servidor -> http response -> Cliente 
+-> (Cliente e Servidor são máquinas ou serviços, como o front e o back)

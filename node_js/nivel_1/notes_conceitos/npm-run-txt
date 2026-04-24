@@ -1,0 +1,3 @@
+O que faz o npm run?
+
+-> Roda scripts definidos dentro do objeto 'scripts' no package.json.

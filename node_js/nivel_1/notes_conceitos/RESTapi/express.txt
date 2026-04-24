@@ -1,0 +1,3 @@
+O que é o EXpress?
+
+Express é um framework. Possivelmente o mais famoso e utilizado para gerenciar rotas e trabalhar com requisições HTTP com o node.js.
