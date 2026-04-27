@@ -1,0 +1,3 @@
+O que é modelagem em POO?
+
+- Modelagem é o processo de organizar os dados definidos a partir da abstração em uma estrutura concreta (objetos, classes, relações.)

@@ -2,8 +2,12 @@ Embedding X Rferenging
 
 -> são modos de unir/referenciar dados de diferentes coleções
 
--> Embedding -> dados que são consultados juntos devem ser armazenados juntos
--> Referencing -> referencia outras coleções por algum dado (PK, FK)
+Embedding: 
+-> dados que são consultados juntos devem ser armazenados juntos. 
+-> Copia os dados de uma coleção para a outra -> não possui 'ligação viva'
+
+Referencing:
+-> referencia outras coleções por algum dado (PK, FK)
 
 | 	  |               	**Embedding** (Incorporação)    |
 |:---:|:------------------------------------------------|

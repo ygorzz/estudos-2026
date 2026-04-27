@@ -37,7 +37,8 @@ class LivroController {
             // Busca o objeto interiio do autor pelo id
             const autorEncontrado = await autor.findById(novoLivro.autor);
             // Usa o spread operator para copiar os dados do livro e alterar a prop 'autor' para o objeto autor completo
-            const livroCompleto = {...novoLivro, autor: {...autorEncontrado._doc}};
+            // ._doc -> envia apenas os dados puros e não o documento completo do mongoose(métodos internos , metadados...)
+            const livroCompleto = {...novoLivro, autor: {...autorEncontrado._doc}}; 
             const livroAdicionado = await livro.create(livroCompleto);
             // 201 -. server criou um novo recurso
             res.status(201).json({ message: "Livro cadastrado com sucesso", livro: livroCompleto });

@@ -1,0 +1,6 @@
+O que é abstração em POO?
+
+- Abstração é o processo de definir os dados que uma entidade pode ter, asbtrair apenas o que é relevante e ignorar o resto.
+- ABSTRAÇÃO É DIMINUIR A COMPLEXIDADE DO MUNDO REAL.
+
+EX: A entidade VACA tem a temperatura corporal, porém não é um dado relevante para a contrução do objeto.
