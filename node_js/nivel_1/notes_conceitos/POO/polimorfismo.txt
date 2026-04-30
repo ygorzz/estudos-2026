@@ -1,0 +1,4 @@
+O que é Polimorfismo?
+
+- Polimosrfismo é capacidade de usar o mesmo método, mas ter comportamentos diferentes para determinado objeto/contexto.
+- Uma das formas mais comund de trabalhar com polimorfismo é fazendo uso da sobrescrita(override) dos métodos, alterando a lógica interna deles.

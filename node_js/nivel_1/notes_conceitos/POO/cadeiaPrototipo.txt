@@ -1,0 +1,25 @@
+O que é cadeia de protótipo?
+
+-> É a sequência de protótipos que um objeto utiliza para ser contstruído.
+-> Todos os objetos, no JavaScript, possuem propriedades em comum que provém de um protótipo base e comum entre eles.
+
+OBS:
+1 - Podemos conferir a cadeia de protótipo de um objeto encadeando '.__proto__' no mesmo. (pelo console do navegador é melhor para entender)
+2 - Não é uma boa prática criar grnades cadeias de protótipo, pois podem afetar a performance com longas buscas.    
+
+__prop__ VS prototype:
+
+👉 __proto__
+mostra o protótipo atual do objeto
+ou seja, de onde ele está herdando
+
+👉 prototype
+é uma propriedade de funções
+define o que será usado como protótipo quando criar objetos com new
+
+    Ex: 
+    function User(){};
+    User.prototype.perfil = "estudante";
+    let estudante = new User();
+
+    -> Nesse caso, definimos que a função User() irá fornecer como protótipo a prop 'perfil'. E a variável estudante herdou esse protótipo com 'new User()'.

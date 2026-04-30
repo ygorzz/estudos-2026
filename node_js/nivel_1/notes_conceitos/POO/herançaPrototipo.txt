@@ -1,0 +1,17 @@
+O que é herança de protótipo?
+
+-> Herança de Protótipo é o processo de um entidade herdar informações de uma outra entidade que servirá como protótipo.
+-> Não ocorre cópia, mas sim referência, ou seja, a prop herdada não é armazenada dentro do objeto que a herdou. 
+-> Quando a prop herdada é chamada, o interpretador precisa buscar na cadeia de protótipos de onde vem a referência.
+
+Ex: 
+    Object.setPrototypeOf(admin, user); // admin herda props de user
+    admin.exibirInfos();
+
+    // Ordem de execução: 
+    // - setPrototypeOf cria um link de conexão (referência), admin não armazena a herança
+    // - quando for chamada alguma prop que vem do protótipo:
+        // programa tenta executar, não consegue
+        // ent procura se há alguma conexão com algum prototipo
+        // encontra
+        // executa

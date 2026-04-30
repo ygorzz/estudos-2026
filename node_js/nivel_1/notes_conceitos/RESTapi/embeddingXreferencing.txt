@@ -7,7 +7,9 @@ Embedding:
 -> Copia os dados de uma coleção para a outra -> não possui 'ligação viva'
 
 Referencing:
--> referencia outras coleções por algum dado (PK, FK)
+-> dados não são armazenados juntos
+-> apenas referenciam outras coleções por algum dado (PK, FK)
+-> na hora da consulta, uma listagem, por exemplo, os dados são exibidos juntos. 
 
 | 	  |               	**Embedding** (Incorporação)    |
 |:---:|:------------------------------------------------|

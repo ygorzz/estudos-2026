@@ -1,0 +1,12 @@
+O que é encapsulamento?
+
+- É o processo de definir propriedades ou métodos como privados. Ou seja, só podem ser acessados dentro da classe.
+- São ENCAPSULADAS dentro da classe. 
+- Isso impossibilita que essas props e métodos sejam acessados onde não devem.
+- Usamos # para definir uma prop como privada e a identificamos antes do construtor. Ex(../../POO/classeEheranca/User.js)
+
+Conceitos de Encapsulamento:
+- Atributos Privados
+- Métodos Privados
+- Getters -> métodos acessores
+- Setters -> métodos modificadores

@@ -1,6 +1,6 @@
 export function contaPalavras(texto){
     const paragrafos = extraiParagafos(texto)
-    // flatMap -> achata estruturas mais complexas/aninhadas em uma única maior com todos os dados
+    // flatMap -> achata estruturas mais complexas/aninhadas - [[[], []], [], []] - em uma única maior com todos os dados
     // Então, um [], quando achatado, apenas some(é desconsiderado) na estrutura maior 
     // Isso é mais eficiente e performático que usar filter e map e percorrer duas vezes o array
     const contagem = paragrafos.flatMap(paragrafo => {
