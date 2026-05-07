@@ -1,13 +1,13 @@
 // Lib nativa do node para trabalhar com http request -> oferece menos recursos
 // import http from 'http';
-import 'dotenv/config' // inicia o dotenv na aplicação
-import app from './src/app.js';
+import "dotenv/config"; // inicia o dotenv na aplicação
+import app from "./src/app.js";
 
 const PORT = 3000;
 
 // CRIANDO E INICIANDO UM SERVER COM EXPRESS:
 app.listen(PORT, () => {
-    console.log('Aguardando uma requisição...');
+  console.log("Aguardando uma requisição...");
 });
     
 

@@ -1,7 +1,13 @@
 O que é um middleware?
 
 - Middleware é uma função que será exexutada entre a requisição e a resposta.
+- São funções especiais que interceptam a requisição, processa os dados e aí sim envia para a rota final
 -  Pode haver vários middlewares.
 
-
 - O middleware recebe a requisição -> realiza alguma operação que definimos e formata os dados -> rota final recebe os dados formatados e responde. 
+
+OBS:
+-> A ordem em que os middlewares são registrados na aplicação importam.
+-> Ao enviar uma res, o fluxo da requisição é encerrado, portanto os outros middlewares não são executados.
+    -> Para um middleware ser executado devemos ou mandar uma resposta da requisição ou executar next() para que o próximo middleware seja executado. Caso contrário, a requisição será encerrada após expirar o tempo de espera.
+-> Métodos de um controlador tbm são middlewares

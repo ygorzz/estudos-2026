@@ -1,0 +1,10 @@
+O que é um Linter?
+
+- Linter é uma ferramenta que atua antes da execução do código detectando erros.
+
+- Esses problemas podem ser:
+    - erros reais (bugs)
+    - más práticas
+    - inconsistência de estilo
+
+- O Linter que domina o JS atualmente é o: ESlint.

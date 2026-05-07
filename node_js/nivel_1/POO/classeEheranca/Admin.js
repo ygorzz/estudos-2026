@@ -2,9 +2,9 @@ import User from './User.js';
 
 // extends -> classe Admin vai herdar dados da classe User
 export default class Admin extends User {
-    // Define quais propriedades herdará. Nesse caso, todas. Os métodos são herdados automaticamente.
+    // Inicializa a subclasse com as props que ela precisa, se for uma prop que vem da superclasse devemos passar dentro de super()
     constructor(nome, email, role = 'admin', ativo = true){
-        // super -> define que toda a lógica de manipulação dessas propriedades também será herdada da Super Classe(nesse caso: User). 
+        // super -> passa os parãmetros para o construtor da superclasse ser executado corretamente. 
         super(nome, email, role, ativo);
     }
 

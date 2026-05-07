@@ -1,0 +1,5 @@
+O que são roteadores?
+
+- Roteadores são arquivos/partes do código que são capazes de registrar um frupo de middlewares para determinadas rotas e métodos http;
+
+Ex: São os arquivos Routes, como livroRoutes.js e autorRoutes.js na no nosso projeto livrari-api.
