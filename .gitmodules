@@ -1,0 +1,11 @@
+[submodule "node_js/nivel_1/projetos/cinema-api"]
+	path = node_js/nivel_1/projetos/cinema-api
+	url = git@github.com:ygorzz/cinema-api.git
+
+[submodule "node_js/nivel_1/projetos/diario-cli"]
+	path = node_js/nivel_1/projetos/diario-cli
+	url = git@github.com:ygorzz/diario-cli.git
+
+[submodule "node_js/nivel_base/projetos/library_manager"]
+	path = node_js/nivel_base/projetos/library_manager
+	url = git@github.com:ygorzz/library-manager-cli.git
