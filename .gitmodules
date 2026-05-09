@@ -1,3 +1,5 @@
+# "esta pasta aqui dentro → aponta para este repo lá fora"
+
 [submodule "node_js/nivel_1/projetos/cinema-api"]
 	path = node_js/nivel_1/projetos/cinema-api
 	url = git@github.com:ygorzz/cinema-api.git
