@@ -1,0 +1,3 @@
+1 - CastError: classe de erro para quando o mongoose não consegue converter um valor para o tipo esperado
+    Ex: Um ObjectId espera um valor hexadecimal, se o usuario enviar algum valor que não seja compatível, logo não pode ser convertido em um ObjectId, o CastError é retornado.
+

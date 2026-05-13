@@ -1,22 +1,27 @@
 import Erro404 from "../erros/Erro404.js";
+import encaminhaErros404 from "../helpers/encaminhaErros404.js";
 import { autores } from "../models/index.js";
 
 class AutorController {
 
   static async listarAutores(req, res, next) {
     try {
-      const listaAutores = await autores.find({});
-      if(listaAutores.length > 0){
-        res.status(200).json({ autores: listaAutores });
-      }else{
+      const resultado = req.resultadoPaginado;
+      const busca = req.buscasFeitas || {};
+      const total = await autores.countDocuments(busca);
+
+      if (total === 0) {
         next(new Erro404("Não há autores cadastrados"));
-      } 
+      }
+      if (resultado.length > 0) {
+        res.status(200).json({ autores: resultado });
+      } else {
+        encaminhaErros404("autores", busca, next);
+      }
     } catch (error) {
-      // next -> encaminha o erro para o middleware de tratamento de erros
       next(error);
     }
-
-  };
+  }
 
   static async buscarAutorPorId(req, res, next) {
     try {

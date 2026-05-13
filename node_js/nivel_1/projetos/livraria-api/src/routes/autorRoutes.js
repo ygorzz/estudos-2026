@@ -2,12 +2,14 @@
 
 import express from "express";
 import AutorController from "../controllers/autorController.js";
+import paginar from "../middlewares/paginar.js";
+import montarConsulta from "../middlewares/montarConsultaAutores.js";
 
 const routes = express.Router();
 
 // Todos os métodos de um Controller são middlewares
 routes
-  .get("/autores", AutorController.listarAutores)
+  .get("/autores", montarConsulta, paginar, AutorController.listarAutores)
   .get("/autores/:id", AutorController.buscarAutorPorId)
   .post("/autores", AutorController.adicionarAutor)
   .put("/autores/:id", AutorController.atualizarAutor)
