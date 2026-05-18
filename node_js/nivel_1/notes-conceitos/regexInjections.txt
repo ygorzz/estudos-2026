@@ -1,0 +1,15 @@
+O que são Regex Injections?
+
+Definição:
+- Regex Injection é uma vulnerabilidade em que a entrada do user é interpretada como parte de uma expressão regular, permitindo que ele altere o comportamento esperado da regex.
+
+Explicação:
+- Quando usamos uma regex em um dado inserido pelo o User sem o tratamento necessário, estamos permitindo que o User insira carcteres especiais que alteram diretamente a regex, modificando o comportamento da operação. Por isso, em regex que utilizam dados vindos diretamente do User, devemos 'escapar regex', limpando o dado de caracteres especiais antes de usá-lo para a operação. 
+
+função 'escapaRegex': 
+- Limpa a entrada do usuário de caracteres que podem ser interpretados como parte da regex. Faz com que esses caracteres sejam interpretados como um valor de busca.
+Ex: .* são caracteres regex para buscar por qualquer coisa, mas após a escapar a regex o programa busca literalmente pelos caracteres '.*'
+
+
+Cathastrophic BackTracking:
+- Qunaod o user realiza uma regex injection que faz o motor de regex gastar MUITO processamento
