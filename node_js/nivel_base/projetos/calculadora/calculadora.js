@@ -22,7 +22,7 @@ rl.question('Digite o primeiro número:\n> ', num1 => {
                 resultado = subtracao(num1, num2)
             } else if (operador == '/'){
                 resultado = divisao(num1, num2)
-            } else if (operador == '*'){
+            } else if (operador == '*'){    
                 resultado = multiplicacao(num1, num2)
             } else {
                 console.log('Operação inválida!')
