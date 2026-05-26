@@ -1,0 +1,4 @@
+O que são Componentes React?
+
+- Em React, componentes sao funções reutilizáveis que retornam códigos JSX para representar parte da interface.
+- Ex: um componente para criar um botão que será utilizado em várias partes do nosso código.

@@ -1,0 +1,31 @@
+O que são styled components?
+
+- Instalação: npm i styled-components
+
+- Style Component é uma maneira para escrever códigos de estilização usando sintaxe do JavaScript. Dessa forma, não é necessário arquivos css.
+- Podemos componentizar esse código de estilização escrevendo-o, armazenando em uma variável e exportando para outros arquivos como um componente.
+
+Ex de código:
+import styled from "styled-components";
+const LogoContainer = styled.div`
+  display: flex;
+  font-size: 30px;
+`;
+
+const LogoImg = styled.img`
+  width: 50px;
+  margin-right: 10px;
+`;
+
+function Logo() {
+  return (
+    <LogoContainer>
+      <LogoImg src={logo} alt="logo" /> 
+      <p>
+        <strong>React</strong>Books
+      </p>
+    </LogoContainer>
+  );
+}
+
+export default Logo;

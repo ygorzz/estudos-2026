@@ -1,0 +1,16 @@
+O que é JSX?
+
+- JSX (JavaScript Syntax Extension)
+- JSX é uma extensão de linguagem javascript usada principalemnte em react.
+- JSX une o Javascript e o HTML, permitindo uma mais praticidade e possibilidades no desenvolvimento
+
+- Dentro da sintaxe JSX, são aceitos:
+
+    - tags JSX/HTML;
+    - componentes React;
+    - expressões JavaScript dentro de {}
+
+OBS:
+
+    - JSX aceita apenas expressões JS que retornem algum valor (variáveis, funções, props de objetos...), porém não aceita declarações(const nome = "", function app() {}...)
+    - Dentro de um arquivo .jsx é possível utilizar sintaxe JAVASCRIPT normalmente, porém, dentro do 'return' dos componentes, é permitido apenas sintaxe JSX.

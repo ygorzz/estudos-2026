@@ -1,0 +1,7 @@
+O que é o npx? 
+
+- npx (node package execute) -> Executor de pacotes do node integrado ao npm
+- Permite que você execute qualuqer ferramenta ou biblionteca do JavaScript diretamente do terminal sem precisr intalá-los na sua máquina.
+
+Ex: npx create-react-app . 
+    OBS: "." é o caminho onde quero criar a aplicação react. Nesse caso, na pasta atual.

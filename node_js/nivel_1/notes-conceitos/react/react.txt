@@ -1,0 +1,10 @@
+O que é react?
+
+- É um lib javascript que permite construir aplicações de forma simplificado utilizando  seus recursos como: sintaxe jsx, componentização, estados, etc...
+
+- Um dos motivos de sua criação é para poder evitar, por exemplo, o uso de:
+    document.getElementById
+    querySelector
+    innerHTML
+    innerText
+    appendChild

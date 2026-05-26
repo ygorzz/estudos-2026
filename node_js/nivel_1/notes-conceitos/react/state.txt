@@ -1,0 +1,7 @@
+O que é Estado (state) em react?
+
+- É um dado que pode mudar ao longo do tempo e que, quando muda, é atualizado e renderizado na interface automaticamente
+
+Poblema que resolve:
+- Há dados que porem alterar o valor ao longo do tempo e o react precisa saber quando foi alterado e o novo valor que precisa ser renderizado na interface
+
