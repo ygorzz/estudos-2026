@@ -1,7 +1,7 @@
 # "esta pasta aqui dentro → aponta para este repo lá fora"
 
 [submodule "node_js/nivel_1/projetos/cinema-api"]
-	path = node_js/nivel_1/projetos/cinema-api
+	path = node_js/nivel_1/projetos/cinema-api 
 	url = git@github.com:ygorzz/cinema-api.git
 
 [submodule "node_js/nivel_1/projetos/diario-cli"]
@@ -11,3 +11,7 @@
 [submodule "node_js/nivel_base/projetos/library_manager"]
 	path = node_js/nivel_base/projetos/library_manager
 	url = git@github.com:ygorzz/library-manager-cli.git
+
+[submodule "node_js/nivel_1/projetos/react-books"]
+	path = node_js/nivel_1/projetos/react-books
+	url = git@github.com:ygorzz/react-books.git
