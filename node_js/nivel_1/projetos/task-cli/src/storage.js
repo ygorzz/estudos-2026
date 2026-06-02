@@ -13,5 +13,5 @@ export async function add(tarefa, id){
 
 export async function list(){
   const listaTarefas = await fs.promises.readFile(filePath, "utf-8");
-  return JSON.parse(listaTarefas);
+  return JSON.parse(listaTarefas);  
 }

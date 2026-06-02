@@ -8,7 +8,7 @@ const SearchContainer = styled.section`
   color: #fff;
   padding: 85px 0;
   height: 470px;
-  width: 100%;
+  width: 100%;  
 `;
 
 const Titulo = styled.h2`
