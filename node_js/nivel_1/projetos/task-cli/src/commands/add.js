@@ -1,13 +1,13 @@
-import { montaObjetoTarefa, verificaSeJsonEstaCriado } from "../helpers.js";
-import listTarefas from "./list.js";
+import { assembleObjectTask, verifyIfJsonIsCreated } from "../helpers.js";
+import listTasks from "./list.js";
 import { filePath, add } from "../storage.js";
 
-export default async function addTarefa(descricao) {
-  await verificaSeJsonEstaCriado(filePath);
-  const listaTarefas = await listTarefas();
-  const tarefa = montaObjetoTarefa(descricao, listaTarefas);
-  const id = tarefa.id;
-  listaTarefas.push(tarefa);
-  await add(listaTarefas, id);
-  console.log("Tarefa adicionado com sucesso (ID:)", id);
+export default async function addTask(description) {
+  await verifyIfJsonIsCreated(filePath);
+  const tasks = await listTasks();
+  const task = assembleObjectTask(description, tasks);
+  const id = task.id;
+  tasks.push(task);
+  await add(tasks, id);  
+  console.log("Task added successfully (ID:)", id);
 }

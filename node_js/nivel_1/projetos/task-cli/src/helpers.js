@@ -1,17 +1,32 @@
 import fs from "fs";
 
-export function montaObjetoTarefa(descricao, listaTarefas){
+export function assembleObjectTask(description, tasksList){
   const date = new Date().toLocaleString();
-  const ultimoId = listaTarefas.length > 0 ? listaTarefas[listaTarefas.length - 1].id : 0;
+  const lastId = tasksList.length > 0 ? tasksList[tasksList.length - 1].id : 0;
   return ({
-    id: ultimoId + 1,
-    description: descricao,
+    id: lastId + 1,
+    description: description,
     status: "todo", 
     createdAt: date,
     updatedAt: ""
   });
 } 
 
-export async function verificaSeJsonEstaCriado(filePath){
+export async function verifyIfJsonIsCreated(filePath){
   if(!fs.existsSync(filePath)) await fs.promises.writeFile(filePath, JSON.stringify([]));
+}
+
+export function findIndex(list, id){
+  const index = list.findIndex(item => item.id === Number(id));
+  return index;
+}
+
+export function verifyIndex(index){
+  const result = index === -1 ? false : true;
+  return result;
+}
+
+export function filterTaskByStatus(list, status){
+  const filteredTasks = list.filter(item => item.status === status);
+  return filteredTasks;
 }

@@ -1,5 +1,5 @@
 import { list } from "../storage.js";
 
-export default async function listaTarefas(){
+export default async function listTasks(){
   return await list();
 }

@@ -15,3 +15,7 @@
 [submodule "node_js/nivel_1/projetos/react-books"]
 	path = node_js/nivel_1/projetos/react-books
 	url = git@github.com:ygorzz/react-books.git
+
+[submodule "node_js/nivel_1/projetos/task-cli"]
+	path = node_js/nivel_1/projetos/task-cli
+	url = git@github.com:ygorzz/task-cli.git

@@ -1,0 +1,8 @@
+import { filterTaskByStatus } from "../helpers.js";
+import { list } from "../storage.js";
+
+export default async function listTasksInProgress(){ 
+  const tasks = await list();
+  const filteredTasks = filterTaskByStatus(tasks, "in progress");
+  return filteredTasks;
+}
