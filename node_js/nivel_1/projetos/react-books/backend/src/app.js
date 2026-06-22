@@ -1,7 +1,9 @@
-import express from 'express';
-import routes from './routes/index.js';
+import express from "express";
+import routes from "./routes/index.js";
+import cors from "cors";
 
-const app = express()
+const app = express();
+app.use(cors({origin: "*"})); // Configura o CORS / * -> permite acesso para qualquer endereço
 routes(app);
 
 export default app;

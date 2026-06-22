@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Titulo from "../Titulo/index.js";
+import Titulo from "../Titulo/index.jsx";
+import { Link } from "react-router-dom";
 
 const Card = styled.div`
   align-items: center;
@@ -8,6 +9,7 @@ const Card = styled.div`
   border-radius: 10px;
   display: flex;
   margin: 0 auto;
+  margin-top: 30px;
   max-width: 600px;
   padding: 25px 20px;
   justify-content: space-around;
@@ -54,7 +56,9 @@ function CardRecomendacao({ titulo, subtitulo, descricao, img }) {
       </div>
       <div>
         <ImgLivro src={img} alt="livro" />
-        <Botao>Saiba mais</Botao>
+        <Link to="https://pt.wikipedia.org/wiki/O_Hobbit">
+          <Botao>Saiba mais</Botao>
+        </Link>
       </div>
     </Card>
   );

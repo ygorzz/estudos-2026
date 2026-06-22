@@ -1,70 +1,233 @@
-# Getting Started with Create React App
+# React Books
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-19.2.6-61dafb?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=flat-square&logo=node.js)
+![Express](https://img.shields.io/badge/Express-5.2.1-000000?style=flat-square&logo=express)
+![Vite](https://img.shields.io/badge/Vite-8.0.16-646cff?style=flat-square&logo=vite)
+![License](https://img.shields.io/badge/License-ISC-blue?style=flat-square)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Descrição
 
-### `npm start`
+**React Books** é uma aplicação web fullstack para gerenciamento de livros. Desenvolvida como projeto prático durante um dos cursos da Alura, a aplicação foi significativamente expandida com funcionalidades adicionais implementadas de forma autônoma.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto combina uma interface moderna em React com um backend robusto em Express, permitindo aos usuários explorar livros, gerenciar favoritos, buscar por títulos, adiconar e atualizar livros existentes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+| Tecnologia | Versão | Propósito |
+|-----------|--------|----------|
+| **React** | 19.2.6 | Biblioteca UI |
+| **Vite** | 8.0.16 | Build tool e dev server |
+| **React Router DOM** | 7.17.0 | Roteamento de páginas |
+| **Styled Components** | 6.4.2 | Estilização CSS-in-JS |
+| **Axios** | 1.17.0 | HTTP client |
 
-### `npm run build`
+### Backend
+| Tecnologia | Versão | Propósito |
+|-----------|--------|----------|
+| **Node.js** | LTS | Runtime JavaScript |
+| **Express** | 5.2.1 | Framework web |
+| **CORS** | 2.8.6 | Controle de origem compartilhada |
+| **Nodemon** | 3.1.14 | Dev: Auto-restart |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estrutura do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+react-books/
+├── frontend/                          # Aplicação React
+│   ├── src/
+│   │   ├── components/                # Componentes reutilizáveis
+│   │   │   ├── BotoesForm/
+│   │   │   ├── CardRecomendacao/
+│   │   │   ├── FormLivros/
+│   │   │   ├── Header/
+│   │   │   ├── IconesHeader/
+│   │   │   ├── InputForm/
+│   │   │   ├── InputSearch/
+│   │   │   ├── Interesses/
+│   │   │   ├── Logo/
+│   │   │   ├── OpcoesHeader/
+│   │   │   ├── Search/
+│   │   │   └── Titulo/
+│   │   ├── imagens/
+│   │   ├── routes/                    # Páginas/Rotas
+│   │   │   ├── Home.jsx
+│   │   │   ├── Livros.jsx
+│   │   │   └── Favoritos.jsx
+│   │   ├── services/                  # Integração com API
+│   │   │   ├── livrosService.js
+│   │   │   └── favoritosService.js
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   ├── eslint.config.mjs
+│   └── vite.config.js
+│
+├── backend/                           # API Express
+│   ├── src/
+│   │   ├── controllers/               # Lógica de negócio
+│   │   │   ├── LivrosController.js
+│   │   │   └── FavoritosController.js
+│   │   ├── repositories/              # Acesso a dados
+│   │   │   ├── livroRepository.js
+│   │   │   └── favoritosRepository.js
+│   │   ├── services/                  # Serviços de domínio
+│   │   │   ├── livroService.js
+│   │   │   └── favoritosService.js
+│   │   ├── routes/                    # Definição de rotas
+│   │   │   ├── index.js
+│   │   │   ├── livrosRoutes.js
+│   │   │   └── favoritosRoutes.js
+│   │   ├── middlewares/
+│   │   │   └── manipuladorErros.js
+│   │   ├── errors/                    # Classes de erro customizadas
+│   │   │   ├── ErroBase.js
+│   │   │   ├── Erro404.js
+│   │   │   └── RequisicaoIncorreta.js
+│   │   ├── helpers/
+│   │   │   └── gerarId.js
+│   │   └── app.js
+│   ├── server.js
+│   ├── livros.json
+│   ├── package.json
+│   └── eslint.config.js
+│
+├── .gitignore
+└── node_modules/
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Arquitetura MVC Estendida (Backend)
+O backend segue um padrão de camadas bem definido:
+- **Routes** → definem endpoints
+- **Controllers** → orquestram requisições
+- **Services** → contêm lógica de negócio
+- **Repositories** → abstraem acesso a dados
+- **Middlewares** → tratamento de erros centralizado
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✨ Funcionalidades
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Funcionalidades Principais
+- ✅ **Exploração de Livros** — Catálogo dinâmico de livros
+- ✅ **Sistema de Favoritos** — Adicionar/remover livros da lista pessoal
+- ✅ **Busca em Tempo Real** — Filtrar livros por título
+- ✅ **Formulário de Adição** — Criar novos registros de livros
+- ✅ **Formulário de Atualização** — Atualizar registros de livros
 
-## Learn More
+### Funcionalidades e Diferenciais Adicionais ⭐
+- 📱 **Componentes Estilizados** — Styled Components para CSS modular e dinâmico
+- 🔀 **Roteamento Avançado** — React Router DOM 7 com navegação de múltiplas páginas
+- 💾 **Persistência de Dados** — Sistema completo de favoritos sincronizado com backend
+- ⚠️ **Alerts/Notificações** — Mensagens amigáveis do backend exibidas ao usuário
+- 🎭 **Ícones Dinâmicos** — Header com ícones contextuais (`IconesHeader`)
+- 🧩 **Componentes Reutilizáveis** — Inputs genéricos e botões padronizados
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Implementadas além do currículo base:
+- 🎨 **Migração para Vite** — Substituição completa de Create React App por Vite para melhor performance
+- 📝 **Formulário de Edição/Criação** — `FormLivros` com validação integrada
+- 🔍 **Search Inteligente** — Buscas otimizadas em tempo real
+- 🛡️ **Tratamento de Erros Robusto** — Classes de erro customizadas e middleware centralizado
+- 📦 **Service Layer** — Separação clara entre lógica de API e componentes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Como Executar o Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Pré-requisitos
+- **Node.js** v18+ instalado
+- **npm** ou **yarn** como gerenciador de pacotes
+- Porta `3000` (frontend) e `8000` (backend) disponíveis
 
-### Analyzing the Bundle Size
+### Instalação e Execução
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### 1. **Clone o repositório**
+```bash
+git clone https://github.com/ygorzz/react-books.git
+cd react-books
+```
 
-### Making a Progressive Web App
+#### 2. **Instale dependências do Backend**
+```bash
+cd backend
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 3. **Inicie o servidor Backend**
+```bash
+npm run dev
+```
 
-### Advanced Configuration
+O backend estará disponível em `http://localhost:8000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### 4. **Em outro terminal, instale dependências do Frontend**
+```bash
+cd frontend
+npm install
+```
 
-### Deployment
+#### 5. **Inicie o servidor de desenvolvimento Frontend**
+```bash
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+A aplicação abrirá em `http://localhost:5173` (ou outra porta conforme exibido)
 
-### `npm run build` fails to minify
+### Scripts Disponíveis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Frontend
+```bash
+npm run dev      # Inicia servidor de desenvolvimento (Vite)
+npm run build    # Build otimizado para produção
+npm run preview  # Preview local da build
+```
+
+#### Backend
+```bash
+npm run dev      # Inicia servidor com nodemon (hot-reload)
+npm test         # Executa testes (não configurado)
+```
+
+---
+
+## 📝 Observações Importantes
+
+### Contextualização do Projeto
+Este projeto foi desenvolvido durante um dos cursos da Alura, onde inicialmente abordava conceitos fundamentais da React. Porém, **grande parte das funcionalidades foram expandidas e aprimoradas de forma autônoma**, incluindo:
+
+- Migração voluntária de Create React App para Vite
+- Estrutura de camadas (Controllers → Services → Repositories)
+- Tratamento de erros com middlewares
+- Busca em tempo real no input de pesquisa
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **Licença ISC**.
+
+```
+ISC License (ISC)
+
+Permission to use, copy, modify, and/or distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright notice
+and this permission notice appear in all copies.
+```
+
+---
+
+*Desenvolvido por **Ygor Santos** — [LinkedIn](https://www.linkedin.com/in/ygor-santos-869152325/) | [GitHub](https://github.com/ygorzz)*
+
+<div align="center">
+
+[⬆ Voltar ao Topo](#react-books)
+
+</div>

@@ -2,11 +2,13 @@ import Logo from "../Logo/index.jsx";
 import OpcoesHeader from "../OpcoesHeader/index.jsx";
 import IconesHeader from "../IconesHeader/index.jsx";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
   background-color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 // Herdando estilização e alterando props de um Styled Component:
@@ -17,7 +19,9 @@ const HeaderContainer = styled.header`
 function Header() {
   return (
     <HeaderContainer>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <OpcoesHeader />
       <IconesHeader />
     </HeaderContainer>

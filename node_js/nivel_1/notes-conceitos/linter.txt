@@ -8,3 +8,19 @@ O que é um Linter?
     - inconsistência de estilo
 
 - O Linter que domina o JS atualmente é o: ESlint.
+
+WorkFlow ESLint:
+
+1 - Instalar o ESLint como devDependence:
+npm install eslint --save-dev
+
+2 - Inicializar a Configuração:
+npx eslint --init
+
+3 - Executar o ESLint
+analisar os arquivos:
+npx eslint .
+corrigir os arquivos:
+npx eslint . --fix
+
+4 - Reinicar VS code

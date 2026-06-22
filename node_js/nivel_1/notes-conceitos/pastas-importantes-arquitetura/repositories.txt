@@ -1,0 +1,3 @@
+O que deve ser armazenado na pasta repositories?
+
+A pasta repositories tem a função única de realizar a comunicação com o BANCO DE DADOS.

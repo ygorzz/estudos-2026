@@ -1,0 +1,22 @@
+O que é o Strict Mode?
+
+Strict Mode é um diretiva do JavaScript que torna a execução do código mais rígida e menos permissiva. Dessa forma capta erros e bugs silenciosos, inconsistências no código e alguns problemas de legibilidade como parâmetros com nomes iguais em uma função.
+
+Frameworks modernos, Typescript e o uso de Modulos ES já rodam automaticamente em strict mode.
+
+Apenas no início do script ou no início de funções
+
+Exemplo:
+1:
+nome = "ygor";
+console.log(nome)
+
+-> saída --> ygor
+
+2:
+"use strict";
+
+nome = "ygor";
+console.log(nome)
+
+-> saída --> "ReferenceError: nome is not defined"

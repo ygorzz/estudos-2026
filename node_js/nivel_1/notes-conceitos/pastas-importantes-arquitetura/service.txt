@@ -1,0 +1,3 @@
+O que armazenar na pasta service?
+
+A pasta service pode armazenar as REGRAS DE NEGÓCIO e também as comunicações com SERVIÇOS EXTERNOS. Quando o projeto é pequeno, não há problema em armazenar ambas as coisas nesse mesmo diretório. Porém, conforme  o projeto cresce, devemos deixar a integração com serviços externos para a pasta PROVIDERS e persistir em SERVICES apenas as regras de negócio.

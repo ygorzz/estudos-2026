@@ -1,6 +1,6 @@
-import sacola from "../../imagens/sacola.svg";
-import perfil from "../../imagens/perfil.svg";
+import book from "../../imagens/book.svg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Icones = styled.ul`
   display: flex;
@@ -10,20 +10,19 @@ const Icones = styled.ul`
 const Icone = styled.li`
   margin-right: 40px;
   width: 25px;
+  img {
+    height: 35px;
+  }
 `;
-
-const icones = [sacola, perfil];
 
 function IconeHeader() {
   return (
     <Icones>
-      {icones.map((icone) => {
-        return (
-          <Icone>
-            <img src={icone} alt="icone"></img>
-          </Icone>
-        );
-      })}
+      <Icone>
+        <Link to="/livros">
+          <img src={book} alt="icone"></img>
+        </Link>
+      </Icone>
     </Icones>
   );
 }
