@@ -1,0 +1,11 @@
+O que são namespaces?
+
+Namesspaces são ferramentas do kernel Linux que trabalham isolando os containers. Uma vez que esses containers compartilham o kernel do mesmo SO e enxergam os mesmos processos, os namespaces agem criando para cada container sua própria visão desses processos. Dessa forma, isolando-os completamente dos outros containers e fazendo-os acreditar que são os únicos processos rodando na máquina.
+
+Há diferentes Namespaces que garantem diferentes níveis de isolamento. Alguns são:
+
+PID (Process Identifier Namespace): isolamento de processos que estão em execução dentro do container.
+NET (Network Namespace): isolamento dos recursos de rede, como interfaces de rede, endereços IP e tabelas de roteamento.
+IPC (Inter-Process Communication Namespace): isolamento dos mecanismos de comunicação entre processos, como filas de mensagens e memória compartilhada.
+MNT (Mount Namespace): isolamento do sistema de arquivos e pontos de montagem, garantindo que alterações no sistema de arquivos dentro de um container não afetem o sistema de arquivos fora dele.
+UTS (Unix Timesharing System Namespace): isolamento do kernel, permitindo que o container atue como se fosse outro host.

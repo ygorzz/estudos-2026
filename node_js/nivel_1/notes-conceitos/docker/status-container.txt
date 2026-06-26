@@ -1,0 +1,3 @@
+STATUS:
+
+Exited -> container foi executado e encerrado
