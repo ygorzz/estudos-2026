@@ -1,0 +1,24 @@
+O que é um proxy?
+
+Proxy é um servidor intermediário entre o cliente e o servidor que atua controlando o tráfego entre eles, ou seja, interceptando requisições e decidindo como prosseguir com elas e se deve prosseguir, podendo ter como funcionalidade a autenticação permitindo ou não o encaminhamento da requisição.
+
+Um proxy pode ter funcionalidades como: autenticação, controle de carga, criptografia, armazenamento em cache, registro de logs, compressão de dados, entre outros.
+
+Exemplos de uso:
+- Um IP faz 10.000 requisições em minuto. O proxy recebe as requisições e não encaaminha paraa o seervidor.
+- Um usuário pede por um recurso. Na primeira vez, o proxy busca no servidor final. Na segunda, o proxy ja possui o recurso em cache e apenas devolve ao usuário.
+
+Há dois principais tipos de Proxys:
+
+- Forward Proxy:
+
+    - Aqui o proxy representa o cliente. Fica entre o usuário e a internet. Como em uma empresa que possui o seu próprio proxy. 
+    - O fluxo seria: PC -> Proxy da empresa -> internet.
+    - O servidor final entende que o o proxy é o cliente, não sabendo da existência de um usuário por trás.
+
+- Reverse Proxy:
+
+    - Aqui o proxy representa o servidor, ou seja, o cliente faz a requisição acreditando que está fazendo a requisição para o servidor final, sem saber da existência do proxy no  meio do caminho.
+    - Fica entre a internet e o server final
+    O fluxo seria: PC -> internet -> Nginx (Sevidor Proxy) -> Servidor final
+    - Geralmente implementado como parte de um aplicação específica.

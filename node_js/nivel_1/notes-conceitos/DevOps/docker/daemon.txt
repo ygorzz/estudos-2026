@@ -1,0 +1,6 @@
+O que é o doceker daemon?
+
+- Docker Daemon é o processo principal do docker. É ele o programa que executa os comandos. Ele é o responsável por gerenciar imagens, containers, volumes, redes e recursos do sistema.
+
+- Docker CLI -> envia os comandos
+- Docker Daemon -> executa os comandos

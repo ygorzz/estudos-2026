@@ -1,0 +1,12 @@
+O que é uma imagem Docker?
+
+- Uma imagem é um arquivo que armazena todos os pré-requisitos e recursos necessários para executar uma aplicação.
+
+- A imagem docker é o mecanismo que torna possível a criação e a replicação de um ambiente isolado. -> A partir da execução de uma imagem criamos um container -> docker run 'imagem'
+
+Criando uma imagem:
+    - cria Dockerfile no diretório do projeto -> 'nano' abre o editor de texto para criação do dockerfile
+    - salva Dockerfile
+    - docker build -t <image-name>:<image-version> -> criar a imagem a partir do Dockerfile
+        - -t -> permite adicionar uma tag, no caso a versão após o nome
+    

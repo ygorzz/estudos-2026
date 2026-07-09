@@ -1,0 +1,5 @@
+O que é YAML?
+
+- YAML(YAML Ain't Markup Language) é um linguagem de marcação simples e leve, estrturando os dados de forma legível por humanos.
+- Arquivos .yaml são comumente utilizados como arquivo de configurações de softwares.
+- Utiliza sintaxe de chaves e valores e a identação é extremamente presente.

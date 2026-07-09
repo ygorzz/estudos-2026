@@ -1,0 +1,5 @@
+O que são as Camadas de uma imagem?
+
+- Uma imagem é constituída e estruturada por várias camadas. As camadas são os resultados das instruções do Dockerfile que representam alterações feitas para a construção da Imagem, como instalação de dependências, cópia de arquivos, criação de diretórios e outras alterações no sistema de arquivos. Essas camadas são armazenadas separadamente, sem vínculo único com uma imagem. Dessa forma, caso a criação de uma outra imagem utilize as mesmas alterações, ou seja, camadas já criadas anteriormente, elas são reaproveitadas, economizando memória, disco e outros recursos computacionais.
+
+- Containers criados a partir de uma mesma imagem compartilham as mesmas camadas (camadas read-only). E, na criação desses containers, é adicionada uma nova camada exclusiva do container, uma camada que não faz parte da imagem, a camada de interação entre o cliente e o container (read-and-write). Essa camada, por ser exclusiva de cada container, não 'vaza' as alterações feitas para os outros.

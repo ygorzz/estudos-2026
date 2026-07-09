@@ -1,0 +1,12 @@
+O que é o Dockerfile?
+
+- Dockerfile é o arquivo que contém as instruções para a criação de uma imagem. O resultado dessas instruções são as camadas das imagens.
+
+Ex de Estrutura:
+
+FROM node:24 // A partir do node construa o restante
+WORKDIR /app // define o diretório interno do container para a execução dos próximos comandos
+COPY package.json . // copia o package.json para o workdir
+RUN npm install // executa o comando npm install
+COPY . . // copia todo o conteúdo do dir onde está o dockerfile para o workdir
+ENTRYPOINT ["npm", "run", "dev"] // executa o comando para iniciar a aplicação

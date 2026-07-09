@@ -1,0 +1,22 @@
+O que é o Docker Compose?
+
+- Docker Compose é uma ferramenta do docker que permite gerenciar vários containers em um único arquivo .yaml, epecificando imagens, nomes dos containers, mapeamentos de portas, dependência entre containers (um backend que depende de um banco de dados, por exemplo), volumes e outras configurações. E, a partir desse arquivo .yaml, executarmos 'docker compose up' para que, com um único comando, seja gerado todos os containers de nossa aplicação.
+
+Estrutura: docker-compose.yaml
+
+version: "3.9"                                      // versão do docker compose utilizada
+services:                                           // serviços que o Compose irá subir
+    postgres:                                       // nome do serviço
+    image: postgres:13                              // imagem que irá utilizar
+    container_name: postgres_db                     // nome do container
+    environment:                                    // variáveis de ambiente
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    ports:
+        - 8080:80                                   // mapeamento de portas
+    volume:
+        - postgres_data: /var/lib/postgresql/data   // define qual a pasta do container terá os dados a serem salvos no volume
+
+volumes:                                            // declara os volumes que existirão 
+    postgres_data:

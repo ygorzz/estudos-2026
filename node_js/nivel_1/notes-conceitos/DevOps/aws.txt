@@ -1,0 +1,15 @@
+O que é AWS?
+
+- Amazon Web Service é um serviço de cloud fornecido pela Amazon.
+
+- Na AWS, há vários serviços para a configuração da hospedagem da sua aplicação:
+    - EC2 → você cria e configura a máquina manualmente.
+    - Elastic Beanstalk → a AWS configura boa parte da infraestrutura para você.
+    - ECS → executa aplicações em containers.
+    - EKS → executa Kubernetes.
+    - Lambda → executa código sem precisar manter servidores.
+
+- Na AWS, para aplicações comuma única imagem usando Elastic BeansTalk:
+    - Utilizamos o arquivo Dockerrun.aws.json para intruir o Elastic BeansTalk a como gerenciar nossa aplicação, qual imagem utilizar, queal porta expor e outras configurações.
+- Na AWS, para aplicações com múltiplos containers usando Elastic BeansTalk e alguns outros serviços:
+    - Utilizamos o carquivo docker-compose.yaml para instruir os serviços a como gerenciar nossa aplicação, qual imagem utilizar, queal porta expor e outras configurações.

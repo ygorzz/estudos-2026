@@ -1,0 +1,40 @@
+- O campo COMMAND nos container mostra o comando que será executado quando o container também for executado.
+
+- A expressão $() executa o que está dentro dos parênteses antes do comando anterior.
+    Ex: docker stop $(docker ps -q) -> essa expressão permite parar todos os containers
+        -> -q --> retorna apenas os IDs
+
+- docker run <imagem> <command-opcional> -> baixa a imagem do docker hub, se necessário, e cria container
+- docker pull <imagem> -> baixa imagem 
+- docker stop <container-id/name> 
+    -> interrompe a execução do container, reiniciando os processos
+    -> por padrão leva 10s para interromper a execução
+    -> -t=0 interrompe imediatamente
+- docker start <container-id/name> -> retoma a execução do container 
+- docker pause <container-id/name> -> pausa a execução do container, sem reiniciar os processos 
+- docker unpause <container-id/name> -> despausa o processo, retomando os processoas de onde pararam 
+- docker ps -> exibe containers em execução
+- docker ps -a -> exibe containers que foram executados em algum momento no seu computador
+- docker rm <container-id/name> -> remove o container
+- docker rm --force <container-id/name> -> remove o container em execução
+
+Trabalhando com imagens:
+    - docker rmi <nome-da-imagem> -> remove imagem do seu computador
+    - docker images/image ls -> exibe todas as imagens baixadas no seu computador
+    - docker inspect <image-id> & docker history <image-id> -> exibem detalhes da estrutura e camadas de uma imagem 
+    - docker tag <name-atual> <novo-name> -> altera nome da imagem 
+
+
+
+Interagindo com o container:
+    - docker exec -it <container-id/name> <command> -> interage com o terminal do container
+        dentro do terminal do container:
+            top -> exibe os comandos/processos em execução
+    - ctrl + d -> interrompe interação
+    - docker run -i <imagem> <command> 
+        -> cria o container já já executando o comando como processo principal (PID 1), ou seja, se esse processo for encerrado, a execução do container também é encerrada;
+
+Acessando Aplicações Internas do container:
+    - docker run -P <imagem> -> faz com que a porta interna do container seja mapeada para um porta externa, dessa forma sendo possível acessar a aplicação que está no container pelo navegador
+    - docker run -p <porta-externa>:<porta-interna> <imagem> -> especifica em qual porta externa disponibilizar a aplicação
+        ex: docker run -p 3000:80 ubuntu

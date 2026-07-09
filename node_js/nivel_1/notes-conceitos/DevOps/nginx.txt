@@ -1,0 +1,13 @@
+O  que é o Nginx (Engine X) ?
+
+Nginx é umm servidor web que pode atuar, e atua em muitos casos, como proxy reverso em aplicações. O mesmo é Open Source. É um dos servidores mais utilizados pela sua performance e redução de consumo de recursos computacionais, reduzindo assim custos com infraestrutura. 
+
+Como servidor web:
+
+- Serve arquivos estáticos: html, css, js, imagens, fontes...
+- Pode rodar sem uum servidor por trás
+
+Como Proxy Reverso:
+
+- Intercepta requisições e toma decisões sobre ela: ./proxy.txt
+- Pode continuar servindo os arquivos estáticos

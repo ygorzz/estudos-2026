@@ -1,0 +1,13 @@
+O que é Cloud?
+
+- Cloud é o que chamamos de Coputação em Nuvem. É um modelo de fornecimento de insfraestrutura sob demanda, ou seja, ao contratarmos um provedor de cloud, pagamos apenas por aqueles recursos que vamos utilizar na infraestrutua da nossa aplicação. 
+
+- Toda aplicação para ser exposta na internet e acessada por outras pessoas precisa rodar em um servidor. Esse servidor pode ser sua própria máquina, porém deve estar configurada corretamente, rodando 24/7 e possuir recursos computacionais suficientes para suportar sua aplicação e estar apta a possível escalabilidade. Ou também, podemos comprar um terreno, switches, cabos, hardwares e contruir um data center próprio, gastando com mão de obra, manutenção e muito mais. Para substituir tudo isso, os serviços de cloud foram criados. Basicamente, alguém, em algum lugar do mundo, teve todo esse trabalho e aluga, em serviços de cloud, seu hardware para que possamos hospedar nossa aplicação e deixá-la rodando 24/7 em suas máquinas. 
+
+Os serviços em nuvem são fornecidos por provedores, algusn exemplos são:
+- Amazon -> AWS (Amazon Web Service)
+- Microsoft -> Azure
+- Google -> Google Cloud 
+
+Infraestrutura -> conjunto de recursos e componentes necessários para suportar a aplicação.
+Cloud (Computação em nuvem) -> modelo e fornecimento desses recursos na internet.

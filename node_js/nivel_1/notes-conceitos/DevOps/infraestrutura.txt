@@ -1,0 +1,6 @@
+O que é infraestrutura?
+
+- Infraestrutura é o conjunto de componentes necessários para suportar o funcionamento de uma aplicação. Inclui recursos para garantir o acesso, a segurança, a escalabilidade, estrutura de rede, entre outros recursos da aplicação. 
+
+Infraestrutura -> conjunto de recursos e componentes necessários para suportar a aplicação.
+Cloud (Computação em nuvem) -> modelo e fornecimento desses recursos na internet.

@@ -1,0 +1,7 @@
+O que é Container?
+
+- Containerização é um solução de virtualização.
+
+- Containers são ambientes que encapsulam o software/aplicação e os resursos necessários para seu funcionamento de modo a evitar problemas de consistências em diferentes ambientes. Os Containers compartilham o kernel do mesmo SO, geralemnte o kernel LINUX, uma vez que o docker é uma ferramenta criada para Linux. 
+
+- Se os mesmos compartilham o mesmo SO, como funciona o isolamento dos containers? -> ,/namespaces.txt & ./cgroups.txt

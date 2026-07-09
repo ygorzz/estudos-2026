@@ -1,5 +1,0 @@
-O que são cGroups?
-
-CGroups -> Control Groups
-
-CGroup é uma ferramenta do kernel Linux que limita o uso de recursos para um container. Esses recuross incluem CPU, RAM, Disco, Rede... Dessa forma não possibilita o consumo de todo o recurso por apenas umm container.

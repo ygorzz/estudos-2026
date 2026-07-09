@@ -1,0 +1,37 @@
+Como persistir os dados de um container mesmo após sua remoção?
+
+Para persistir os dados de um container mesmo após sua remoção, há três abordagens mais comuns: bind mount, volume e tmpfs mount.
+
+- VOLUMES:
+-> Mecanismo recomendado pelo docker.
+-> Conecta o diretório do container a um diretório na Docker Area.
+-> Com esse método, o fluxo de criação deve ser:
+    1 - docker volume create <nome-do-volume>
+    2 - docker run --mount source=<caminho-do-volume>,target=<caminho-diretorio-do-container> <imagem>
+-> Para compartilhar os dados do volume entre diferentes containers, basta executar docker run passando o mesmo caminho do parâmetro 'source'.
+
+-> docker volume ls -> lista volumes existentes
+-> docker volume inspect <nome-do-volume> -> exibe infos relativas ao volume
+-> docker volume rm <nome-do-volume> -> remove volume
+
+-> PRÓ: Por armazenar os dados na Docker Area que existe apenas no diretório em que está o docker, é menos suscetível á alterações indesejadas.
+
+
+- BIND MOUNT:
+-> Conecta o diretório do container com um diretório do FyleSystem da máquina host (seu computador).
+-> Com esse método, o fluxo para criação do container deve ser:
+    1 - criar o diretório na máquina host onde será persistido os dados (mkdir)
+    2 - executar: docker run --mount type=bind,source=<caminho-diretorio-criado-na-maquina>,target=<caminho-diretorio-do-container> <imagem>
+-> Para compartilhar esses dados entre diferentes containers, basta executar docker run passando o mesmo caminho do parâmetro 'source'.
+
+-> VULNERABILIDADE: qualquer alteração no caminho da source por alguém que tenha acesso à máquina afeta o vínculo entre o container e diretório de persistência.
+
+
+- TMPFS MOUNT
+-> A ideia desse mecanismo é armazenar os dados de forma temporária.
+-> Usado principalmente quando estamos trabalhando com dados sensíveis, como senhas de usuários.
+-> Com esse método, o fluxo de criação deve ser:
+    1 - docker run --tmpfs=<caminho-diretorio-do-container> <imagem>
+    -> cria diretório app e tmp sendo amos temporários
+
+-> PRÓ: Protege os dados de acessos externos e não os compartilha entre diferentes containers. 

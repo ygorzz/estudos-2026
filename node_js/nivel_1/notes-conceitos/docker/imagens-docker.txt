@@ -1,5 +1,0 @@
-O que é uma imagem Docker?
-
-Uma imagem é um arquivo que armazena todos os pré-requisitos e recursos necessários para executar uma aplicação.
-
-A imagem docker é o mecanismo que torna possível a criação e a replicação de um ambiente isolado. -> A partir da execução de uma imagem criamos um container -> docker run 'imagem'
